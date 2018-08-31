@@ -32,7 +32,8 @@ export default  function (time, now) {
     if (item[i].amt > 0) {
       amt = Math.floor(item[i].amt);
       cycle = item[i].cycle;
+      return `${amt} ${cycle}${amt > 1 ? 's' : ''} ago`;
     }
   }
-  return `${amt} ${cycle}${amt > 1 ? 's' : ''} ago`;
+ 
 };
